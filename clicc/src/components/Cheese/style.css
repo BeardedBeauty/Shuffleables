@@ -1,0 +1,10 @@
+.imgholder {
+    height: 200px;
+    border: 1px solid grey;
+    border-radius: 6px;
+    background: white;
+}
+.cliccimg {
+    width: 170px;
+    height: auto;
+}
