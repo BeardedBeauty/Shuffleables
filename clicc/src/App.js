@@ -8,13 +8,28 @@ class App extends React.Component {
   state = {
     cheese: cheese,
     score: 0,
-    clicked: []
+    clicc: []
   }
 
   handleClick = id => {
-    // id.preventDefault();
+    // let y = this.state.clicc;
+    // y.find(() => {
+    //   y.push(id)
+    // }
+
     this.setState({ score: this.state.score + 1 });
-    console.log(this.state.score + id)
+    // this.setState({ clicked: y })
+    console.log(this.state.clicc)
+    this.shuffle();
+  }
+
+  shuffle = () => {
+    let t = this.state.cheese;
+    for (let e = t.length - 1; e > 0; e--) {
+      let r = Math.floor(Math.random() * (e + 1));
+      [t[e], t[r]] = [t[r], t[e]];
+    }
+    this.setState({ cheese: t })
   }
 
   render() {
@@ -28,7 +43,8 @@ class App extends React.Component {
               <Cheesebox
                 image={slice.img}
                 id={slice.id}
-                onClick={this.handleClick}
+                handleClick={this.handleClick}
+                key={slice.id}
               />
             )}
           </div>
