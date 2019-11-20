@@ -12,31 +12,37 @@ class App extends React.Component {
   }
 
   handleClick = id => {
-    // let y = this.state.clicc;
-    // y.find(() => {
-    //   y.push(id)
-    // }
-
-    this.setState({ score: this.state.score + 1 });
-    // this.setState({ clicked: y })
+    const y = this.state.clicc;
+    const o = y.find(i => i === id);
+    if (!o) {
+      y.push(id);
+      this.setState({ score: this.state.score + 1 });
+    } else {
+      this.setState(
+        {
+          score: this.state.score = 0,
+          clicc: []
+        }
+      );
+    };
     console.log(this.state.clicc)
     this.shuffle();
-  }
+  };
 
   shuffle = () => {
     let t = this.state.cheese;
     for (let e = t.length - 1; e > 0; e--) {
       let r = Math.floor(Math.random() * (e + 1));
       [t[e], t[r]] = [t[r], t[e]];
-    }
+    };
     this.setState({ cheese: t })
-  }
+  };
 
   render() {
     return (
       <div>
         <Nav score={this.state.score} />
-        <br /><br />
+        <br /> <br />
         <div className="container">
           <div className="row">
             {this.state.cheese.map(slice =>
