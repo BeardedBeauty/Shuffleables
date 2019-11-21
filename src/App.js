@@ -8,20 +8,26 @@ class App extends React.Component {
   state = {
     cheese: cheese,
     score: 0,
-    clicc: []
+    clicc: [],
+    geese: ""
   }
 
   handleClick = id => {
     const y = this.state.clicc;
-    const o = y.find(i => i === id);
-    if (!o) {
+    // const o = y.find(i => i === id);
+    if (!y.find(i => i === id)) {
       y.push(id);
-      this.setState({ score: this.state.score + 1 });
+      this.setState({
+        score: this.state.score + 1,
+        clicc: y,
+        geese: "Correct"
+      });
     } else {
       this.setState(
         {
           score: this.state.score = 0,
-          clicc: []
+          clicc: [],
+          geese: "Wrong!"
         }
       );
     };
@@ -41,7 +47,10 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <Nav score={this.state.score} />
+        <Nav
+          score={this.state.score}
+          guess={this.state.geese}
+        />
         <br /> <br />
         <div className="container">
           <div className="row">
