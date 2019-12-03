@@ -1,3 +1,11 @@
+Project created for better undestanding of react. Clicking on each image will randomize them and add to your score, clicking on the same image more than once will set your score to 0.
+
+This project will undergo updates in small doses in the future.
+Created and maintained by John Ochs.
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
