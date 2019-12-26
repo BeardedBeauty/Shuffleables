@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import './App.scss';
 import cheese from './cheeses.json';
 import Nav from "./components/Nav";
 import Cheesebox from "./components/Cheese";

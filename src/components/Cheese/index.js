@@ -3,8 +3,10 @@ import "./style.css";
 
 function Cheese(props) {
     return (
-        <div className="imgholder col s6 m4 l3 z-depth-3" onClick={() => props.handleClick(props.id)}>
-            <img className="cliccimg" id={props.id} src={props.image} />
+        <div className="holder col s6 m6 l3">
+            <div className="imgholder z-depth-3" onClick={() => props.handleClick(props.id)}>
+                <img className="cliccimg" id={props.id} src={props.image} />
+            </div>
         </div>
     )
 }
