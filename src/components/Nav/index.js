@@ -6,7 +6,7 @@ function Nav(props) {
             <a href="#" className="brand-logo">cheeses, crust</a>
             <ul className="right hide-on-med-and-down">
                 <li>
-                    <a href="https://prtflo3.herokuapp.com/portfolio">portfolio</a>
+                    <a href="https://prtflo3.herokuapp.com/portfolio">John Ochs Portfolio</a>
                 </li>
             </ul>
             <ul className="right">
