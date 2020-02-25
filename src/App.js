@@ -16,7 +16,6 @@ class App extends React.Component {
 
     handleClick = id => {
         const y = this.state.clicc;
-        // const o = y.find(i => i === id);
         if (!y.find(i => i === id)) {
             y.push(id);
             this.setState({
