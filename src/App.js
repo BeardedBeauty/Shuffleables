@@ -48,10 +48,7 @@ class App extends React.Component {
         this.setState({ cheese: t });
     };
 
-    stop = () => {
-        this.setState({ i: 1 });
-        console.log("this stupid timer was definitely the hardest part");
-    }
+    stop = () => this.setState({ i: 1 });
 
     render() {
         return (
