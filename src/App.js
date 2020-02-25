@@ -4,6 +4,8 @@ import cheese from './cheeses.json';
 import Nav from "./components/Nav";
 import Cheesebox from "./components/Cheese";
 
+//clicc shuffle card game to test your mnemory
+
 class App extends React.Component {
     state = {
         cheese: cheese,
