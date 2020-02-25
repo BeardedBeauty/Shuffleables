@@ -9,7 +9,7 @@ function Nav(props) {
                     <a href="https://prtflo3.herokuapp.com/portfolio">John Ochs Portfolio</a>
                 </li>
                 <li>
-                    <a href="https://github.com/BeardedBeauty/clickable">Github</a>
+                    <a href="https://github.com/BeardedBeauty/clickable">Github Repo</a>
                 </li>
             </ul>
             <ul className="right">
