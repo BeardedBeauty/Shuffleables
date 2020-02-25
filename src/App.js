@@ -45,7 +45,7 @@ class App extends React.Component {
             let r = Math.floor(Math.random() * (e + 1));
             [t[e], t[r]] = [t[r], t[e]];
         };
-        this.setState({ cheese: t })
+        this.setState({ cheese: t });
     };
 
     stop = () => {
