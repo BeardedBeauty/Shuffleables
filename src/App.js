@@ -28,7 +28,7 @@ class App extends React.Component {
         else {
             this.setState(
                 {
-                    score: this.state.score = 0,
+                    score: 0,
                     clicc: [],
                     geese: "Wrong!",
                     i: 0
