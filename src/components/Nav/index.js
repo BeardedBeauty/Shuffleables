@@ -14,7 +14,10 @@ function Nav(props) {
                     <h5>Guess: {props.guess} | </h5>
                 </li>
                 <li>
-                    <h5>Score: {props.score}</h5>
+                    <h5>Score: {props.score} </h5>
+                </li>
+                <li>
+                    <h5>|</h5>
                 </li>
             </ul>
         </nav>
