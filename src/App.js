@@ -74,6 +74,8 @@ class App extends React.Component {
                         )}
                     </div>
                 </div>
+                {/* <div className="clicker redd">muffin</div>
+                <div className="clicker yelloww">muffin</div> */}
             </div>
         );
     };

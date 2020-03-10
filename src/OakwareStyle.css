@@ -1,0 +1,31 @@
+div.clicker {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px solid;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: .3s;
+    /* display: block; */
+}
+
+.redd {
+    color: white;
+    background-color: red;
+}
+
+.redd:hover {
+    background-color: #eeeeee;
+    color: red;
+}
+
+.yelloww {
+    color: #7a6e2e;
+    background-color: #f8e42c;
+}
+
+.yelloww:hover {
+    background-color: #eeeeee;
+    color: #726700;
+}
