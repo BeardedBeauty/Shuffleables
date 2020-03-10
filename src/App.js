@@ -3,8 +3,9 @@ import './App.scss';
 import cheese from './cheeses.json';
 import Nav from "./components/Nav";
 import Cheesebox from "./components/Cheese";
+import "./OakwareStyle.css";
 
-//clicc shuffle card game to test your mnemory
+//clicc shuffle card game to test your memory
 
 class App extends React.Component {
     state = {
