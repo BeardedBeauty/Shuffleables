@@ -9,3 +9,6 @@ Simply click each image to either add to or reset your score.
 ## Built With
 * [React](https://reactjs.org)
 * [Materialize](https://materializecss.com)
+
+## Authors
+* John Ochs
